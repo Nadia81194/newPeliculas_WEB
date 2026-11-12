@@ -1,6 +1,6 @@
 # CineSpot – Explorador de películas y series
 
-Aplicación web hecha con **Vue 3 + Vite** para explorar un catálogo de 20 películas y series: búsqueda, filtros, detalle y favoritos. Sin backend ni API (datos locales). El reporte completo está en [`REPORTE.md`](./REPORTE.md).
+Aplicación web hecha con **Vue 3 + Vite** para explorar un catálogo de 20 películas y series: búsqueda, filtros, detalle y favoritos. Sin backend ni API
 
 ## Instalación y ejecución
 Requiere Node.js 18 o superior.
