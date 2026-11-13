@@ -11,7 +11,7 @@ npm run build
 ```
 
 ## Imágenes del catálogo
-Coloca los pósters en `public/img/` con el nombre `<id>.jpg` (ver `public/img/LEEME.txt`). Si falta alguno, se muestra un póster de respaldo.
+Coloca los pósters en `public/img/` con el nombre `<id>.jpg` (ver `public/img/`). Si falta alguno, se muestra un póster de respaldo.
 
 ## Componentes
 | Archivo | Función |

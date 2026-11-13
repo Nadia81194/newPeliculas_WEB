@@ -20,9 +20,9 @@ const types = [
 ]
 const genres = ['Todos', ...new Set(items.map((i) => i.genre))]
 const eras = [
-  { label: '1972 – 2009', from: 0, to: 2009 },
-  { label: '2010 – 2016', from: 2010, to: 2016 },
-  { label: '2017 – 2021', from: 2017, to: 2100 }
+  { label: '1988 – 2008', from: 0, to: 2008 },
+  { label: '2009 – 2015', from: 2009, to: 2015 },
+  { label: '2016 – 2022', from: 2016, to: 2100 }
 ]
 const hero = [items[1], items[0], items[2]] // tarjetas en abanico
 

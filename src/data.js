@@ -1,27 +1,25 @@
-// Catálogo local (arreglo de objetos). Cambia "hue" para el color del póster
-// o agrega "img: '/img/archivo.jpg'" (en la carpeta public/img) para usar imágenes reales.
+
 const raw = [
-  { id: 1, title: 'Interstellar', type: 'Película', genre: 'Ciencia ficción', year: 2014, duration: '169 min', hue: 215, synopsis: 'Un grupo de astronautas viaja a través de un agujero de gusano para buscar un nuevo hogar para la humanidad.' },
-  { id: 2, title: 'Coco', type: 'Película', genre: 'Animación', year: 2017, duration: '105 min', hue: 330, synopsis: 'Miguel sueña con ser músico y termina en la Tierra de los Muertos buscando a su ancestro.' },
-  { id: 3, title: 'Stranger Things', type: 'Serie', genre: 'Misterio', year: 2016, seasons: 5, hue: 0, synopsis: 'Un grupo de niños enfrenta fuerzas sobrenaturales tras la desaparición de un amigo en Hawkins.' },
-  { id: 4, title: 'Inception', type: 'Película', genre: 'Ciencia ficción', year: 2010, duration: '148 min', hue: 200, synopsis: 'Un ladrón que roba secretos entrando en los sueños recibe la misión de plantar una idea.' },
-  { id: 5, title: 'Toy Story', type: 'Película', genre: 'Animación', year: 1995, duration: '81 min', hue: 45, synopsis: 'Los juguetes de Andy cobran vida cuando nadie los ve y Woody enfrenta la llegada de Buzz.' },
-  { id: 6, title: 'Breaking Bad', type: 'Serie', genre: 'Drama', year: 2008, seasons: 5, hue: 130, synopsis: 'Un profesor de química con cáncer se convierte en fabricante de metanfetamina.' },
-  { id: 7, title: 'El Rey León', type: 'Película', genre: 'Animación', year: 1994, duration: '88 min', hue: 28, synopsis: 'Simba, joven heredero del trono, debe regresar para enfrentar a su tío Scar.' },
-  { id: 8, title: 'Black Mirror', type: 'Serie', genre: 'Ciencia ficción', year: 2011, seasons: 6, hue: 260, synopsis: 'Episodios independientes que muestran el lado oscuro de la tecnología moderna.' },
-  { id: 9, title: 'Parásitos', type: 'Película', genre: 'Drama', year: 2019, duration: '132 min', hue: 160, synopsis: 'Una familia pobre se infiltra poco a poco en la vida de una familia adinerada.' },
-  { id: 10, title: 'The Office', type: 'Serie', genre: 'Comedia', year: 2005, seasons: 9, hue: 190, synopsis: 'Día a día de los empleados de una oficina de papel filmado como documental.' },
-  { id: 11, title: 'Spider-Man: Un nuevo universo', type: 'Película', genre: 'Animación', year: 2018, duration: '117 min', hue: 350, synopsis: 'Miles Morales se convierte en Spider-Man y conoce a otros héroes de dimensiones distintas.' },
-  { id: 12, title: 'Dark', type: 'Serie', genre: 'Misterio', year: 2017, seasons: 3, hue: 240, synopsis: 'La desaparición de un niño revela secretos de cuatro familias a través del tiempo.' },
-  { id: 13, title: 'Mad Max: Furia en el camino', type: 'Película', genre: 'Acción', year: 2015, duration: '120 min', hue: 20, synopsis: 'Max y Furiosa huyen por el desierto de un tirano en una persecución sin descanso.' },
-  { id: 14, title: 'Friends', type: 'Serie', genre: 'Comedia', year: 1994, seasons: 10, hue: 300, synopsis: 'Seis amigos viven sus vidas y amores en Nueva York.' },
-  { id: 15, title: 'Buscando a Nemo', type: 'Película', genre: 'Animación', year: 2003, duration: '100 min', hue: 195, synopsis: 'Un pez payaso cruza el océano para encontrar a su hijo capturado.' },
-  { id: 16, title: 'The Mandalorian', type: 'Serie', genre: 'Acción', year: 2019, seasons: 3, hue: 90, synopsis: 'Un cazarrecompensas solitario protege a un misterioso niño en los confines de la galaxia.' },
-  { id: 17, title: 'El Padrino', type: 'Película', genre: 'Drama', year: 1972, duration: '175 min', hue: 15, synopsis: 'La saga de la familia Corleone y la transición de poder de padre a hijo.' },
-  { id: 18, title: 'Arcane', type: 'Serie', genre: 'Animación', year: 2021, seasons: 2, hue: 280, synopsis: 'Dos hermanas quedan en bandos opuestos en la guerra entre Piltover y Zaun.' },
-  { id: 19, title: 'Get Out', type: 'Película', genre: 'Misterio', year: 2017, duration: '104 min', hue: 170, synopsis: 'Un joven visita a la familia de su novia y descubre un inquietante secreto.' },
-  { id: 20, title: 'Brooklyn Nine-Nine', type: 'Serie', genre: 'Comedia', year: 2013, seasons: 8, hue: 220, synopsis: 'Un detective inmaduro y su capitán serio trabajan en una comisaría de Brooklyn.' }
+  { id: 1, title: 'Interstellar', type: 'Película', genre: 'Ciencia ficción', year: 2014, duration: '169 min', synopsis: 'Un grupo de astronautas viaja a través de un agujero de gusano para buscar un nuevo hogar para la humanidad.' },
+  { id: 2, title: 'Coco', type: 'Película', genre: 'Animación', year: 2017, duration: '105 min', synopsis: 'Miguel sueña con ser músico y termina en la Tierra de los Muertos buscando a su ancestro.' },
+  { id: 3, title: 'El viaje de Chihiro', type: 'Película', genre: 'Studio Ghibli', year: 2001, duration: '125 min', synopsis: 'Una niña queda atrapada en un mundo de espíritus y debe trabajar en unos baños para rescatar a sus padres.' },
+  { id: 4, title: 'Mi vecino Totoro', type: 'Película', genre: 'Studio Ghibli', year: 1988, duration: '86 min', synopsis: 'Dos hermanas se mudan al campo y conocen a los espíritus del bosque, entre ellos el gran Totoro.' },
+  { id: 5, title: 'La princesa Mononoke', type: 'Película', genre: 'Studio Ghibli', year: 1997, duration: '134 min', synopsis: 'Un joven guerrero queda en medio de la guerra entre los dioses del bosque y una aldea de hierro.' },
+  { id: 6, title: 'El castillo ambulante', type: 'Película', genre: 'Studio Ghibli', year: 2004, duration: '119 min', synopsis: 'Sophie, convertida en anciana por una maldición, encuentra refugio en el castillo móvil del mago Howl.' },
+  { id: 7, title: 'Nicky, la aprendiz de bruja', type: 'Película', genre: 'Studio Ghibli', year: 1989, duration: '103 min', synopsis: 'Una joven bruja se instala en una ciudad costera y abre un servicio de entregas volando en escoba.' },
+  { id: 8, title: 'Ponyo', type: 'Película', genre: 'Studio Ghibli', year: 2008, duration: '101 min', synopsis: 'Un pez dorado que quiere ser humana se hace amiga de un niño, y su magia altera el océano.' },
+  { id: 9, title: 'Your Name', type: 'Película', genre: 'Anime', year: 2016, duration: '106 min', synopsis: 'Dos adolescentes que no se conocen intercambian cuerpos y buscan encontrarse.' },
+  { id: 10, title: 'Una voz silenciosa', type: 'Película', genre: 'Anime', year: 2016, duration: '130 min', synopsis: 'Un joven que acosó a una compañera sorda busca redimirse por sus acciones años después.' },
+  { id: 11, title: 'Ataque a los Titanes', type: 'Serie', genre: 'Anime', year: 2013, seasons: 4, synopsis: 'La humanidad vive tras enormes murallas para protegerse de gigantes que devoran personas.' },
+  { id: 12, title: 'Death Note', type: 'Serie', genre: 'Anime', year: 2006, seasons: 1, synopsis: 'Un estudiante encuentra una libreta que mata a quien se escriba en ella y se enfrenta al detective L.' },
+  { id: 13, title: 'Fullmetal Alchemist: Brotherhood', type: 'Serie', genre: 'Anime', year: 2009, seasons: 1, synopsis: 'Dos hermanos alquimistas buscan la piedra filosofal para recuperar sus cuerpos tras un ritual prohibido.' },
+  { id: 14, title: 'Demon Slayer', type: 'Serie', genre: 'Anime', year: 2019, seasons: 4, synopsis: 'Tanjiro se une a los cazadores de demonios para curar a su hermana, convertida en demonio.' },
+  { id: 15, title: 'Black Clover', type: 'Serie', genre: 'Anime', year: 2017, seasons: 4, synopsis: 'Asta, un niño sin magia en un mundo de magos, sueña con convertirse en el Rey Mago.' },
+  { id: 16, title: 'Monster High: 13 deseos', type: 'Película', genre: 'Monster High', year: 2013, duration: '70 min', synopsis: 'Las chicas monstruo descubren una lámpara mágica con un genio que concede deseos con consecuencias inesperadas.' },
+  { id: 17, title: 'Monster High: Scaris, la ciudad del miedo', type: 'Película', genre: 'Monster High', year: 2013, duration: '72 min', synopsis: 'Frankie y sus amigas viajan a Scaris y viven una aventura de moda y misterio.' },
+  { id: 18, title: 'Monster High: Boo York, Boo York', type: 'Película', genre: 'Monster High', year: 2015, duration: '70 min', synopsis: 'Las chicas monstruo viajan a Boo York, la ciudad que nunca duerme, con un musical y muchas sorpresas.' },
+  { id: 19, title: 'Monster High: Embrujadas', type: 'Película', genre: 'Monster High', year: 2015, duration: '70 min', synopsis: 'Las chicas monstruo enfrentan una aventura llena de fantasmas y sorpresas en la escuela.' },
+  { id: 20, title: 'Monster High: La película', type: 'Película', genre: 'Monster High', year: 2022, duration: '94 min', synopsis: 'Una chica mitad hombre lobo y mitad humana entra a Monster High y descubre su lugar entre los monstruos.' }
 ]
 
-// Cada título busca su imagen en public/img/<id>.jpg (si no existe, se muestra un póster de respaldo)
 export const items = raw.map((i) => ({ ...i, img: `/img/${i.id}.jpg` }))
