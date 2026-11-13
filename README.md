@@ -25,7 +25,7 @@ Coloca los pósters en `public/img/` con el nombre `<id>.jpg` (ver `public/img/`
 # Reporte de proyecto: CineSpot, explorador de películas y series
 
 **Tema 3. Programación del lado del cliente – Manejo de frameworks**
-**Equipo:** _(nombres de los integrantes)_  **Fecha:** _(fecha de entrega)_  **Repositorio:** _(enlace a GitHub)_
+**Equipo:** Nadia Coria Aragón y Leonardo Rosas Coria  **Fecha:** 13/11/2026
 
 ## 1. Introducción
 CineSpot es una aplicación web interactiva para explorar un catálogo de películas y series, consultar su información y guardar favoritos. Se desarrolló con un framework de JavaScript para practicar componentes, manejo de estado y renderizado dinámico.
@@ -104,8 +104,6 @@ cinespot/
 | Vista «Favoritos» sin favoritos | Mensaje de lista vacía |
 | Pantalla de celular | Una columna de contenido, sin desbordes |
 | Imagen faltante | Se muestra el póster de respaldo |
-
-_(Anota aquí el resultado real de cada prueba y agrega capturas de pantalla.)_
 
 ## 9. Conclusiones
 Vue permitió construir la aplicación dividiendo la interfaz en componentes pequeños y manteniendo la lógica ordenada. La reactividad evitó manipular el DOM manualmente, y props/emits dejaron claro el flujo de datos. _(Agrega aquí dificultades y aprendizajes del equipo.)_
